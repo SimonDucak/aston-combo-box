@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <div>
       <h4>Combobox output</h4>
       <p>{{comboValue}}</p>
@@ -15,10 +15,10 @@
 </template>
 
 <script>
-import comboBox from './components/comboBox.vue';
+import comboBox from '../components/comboBox.vue';
 
 export default {
-  name: 'App',
+  name: 'Combo',
   components: {
     comboBox,
   },
@@ -55,25 +55,6 @@ export default {
 };
 </script>
 
-<style lang="less" coped>
-  body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+<style scoped>
 
-  * {
-    box-sizing: inherit;
-    position: relative;
-  }
-
-  #app {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-  }
 </style>
